@@ -1,0 +1,34 @@
+<div class="h4">Error level breakdown</div>
+<ul class="list-group">
+	{% for key, value in results %}
+		<li class="list-group-item {% if value.bit %} on {% else %} off {% endif %}"
+			onclick="toggle('{{key}}')">
+			<div class="col-sm-2 checkbox">
+				<label>
+					<input
+						type="checkbox"
+						name="chk_{{ key }}"
+						onclick="toggle('{{key}}')"
+						{% if value.bit %}
+							checked
+						{% endif %}
+						>
+				</label>
+			</div>
+			<div class="col-sm-2 checkbox">
+				{{key}}
+			</div>
+			<div class="col-sm-2">
+				2^{{ value.i }}
+			</div>
+			<div class="col-sm-6">
+				{% if value.bit %}
+					<b>{{ value.label|raw }}</b>
+				{% else %}
+					<i>{{ value.label|raw }}</i>
+				{% endif %}
+			</div>
+			<br/>
+		</li>
+	{% endfor %}
+</ul>

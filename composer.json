@@ -1,0 +1,10 @@
+{
+	"name": "garpini/test",
+	"description": "Just me testing stuff",
+	"require": {
+        "php": ">=5.3.0",
+		"twitter/bootstrap": "dev-master",
+		"monolog/monolog": "1.4.*@dev",
+		"twig/twig": "dev-master"
+	}
+}

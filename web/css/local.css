@@ -1,0 +1,70 @@
+.on {
+	background-color: lightgreen;
+}
+.off {
+	background-color: #EEF
+}
+
+
+.linkBox {
+	padding: 50px 25px 50px 25px;
+	width: 175px;
+}
+.linkCategory {
+	font-size: 14pt;
+	font-weight: bolder;
+	/*display: inline-block;*/
+}
+.live {
+	background-color: lightgreen;
+}
+.staging {
+	background-color: lightblue;
+}
+.localdev {
+	background-color: lightpink;
+}
+.tools {
+	background-color: lightyellow;
+}
+li {
+	display: inline-block;
+}
+.highlight {
+	background-color: lightgrey;
+}
+.nav {
+	background-color: lightgrey;
+	border-bottom: solid 1px;
+}
+.nav .active {
+	background-color: white;
+	border-bottom: 0px;
+}
+.tag {
+	color: blue;
+}
+.text {
+	color: red;
+}
+
+#mainnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+	width: 100%;
+}
+
+body {
+	font-family: monospace;
+    padding-top: 40px;
+    margin-bottom: -40px;
+}
+ul {
+	list-style: none;
+}
+
+.bordered {
+	border: 1px solid black;
+}

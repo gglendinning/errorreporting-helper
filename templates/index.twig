@@ -1,0 +1,29 @@
+{% extends "wrapper.twig" %}
+
+{% block content %}
+<script type="text/javascript">
+	function toggle(x) {
+		console.log('[name=chk_'+x+']');
+		$('[name=chk_'+x+']').click();
+		$('form').submit();
+	}
+</script>
+
+<div class="container-fluid">
+	<div class="h1 text-center">PHP <a href="http://php.net/manual/en/function.error-reporting.php">error_reporting()</a> flag helper</div>
+	<br/>
+	<form role='form' class="form-inline" action='{{ action }}' method="post">
+
+		<div class="row-fluid">
+			<div class="col-sm-6">
+				{% include 'leftPane.twig' %}
+			</div>
+
+			<div class="col-sm-6">
+				{% include 'rightPane.twig' %}
+			</div>
+		</div>
+	</form>
+</div>
+
+{% endblock %}
