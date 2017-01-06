@@ -1,6 +1,11 @@
 {
 	"name": "garpini/test",
 	"description": "Just me testing stuff",
+	"autoload": {
+		"psr-4": {
+			"ErrorReportingHelper\\": "src"
+		}
+	},
 	"require": {
         "php": ">=5.3.0",
 		"twitter/bootstrap": "dev-master",
